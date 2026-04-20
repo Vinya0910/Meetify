@@ -1,4 +1,7 @@
+node_modules
  Backend/node_modules
- Backend.env
  Frontend/node_modules
+.env
+ Backend/src/.env
  Frontend.env
+npm -debug.log
