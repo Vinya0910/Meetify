@@ -6,7 +6,7 @@ export default function Landing() {
     <div className="landingPageContainer">
      <nav>
 <div className="navHeader">
-<h2>Apna video call</h2>
+<h2>Meetify</h2>
 </div>
 
 <div className="navList">
@@ -23,9 +23,9 @@ export default function Landing() {
 <div className="landingMainContainer">
 <div>
 <h1><span style={{color:"#FF9839"}}>Connect</span> with your loved once</h1>
-<p>Cover your distance with apna video call</p>
+<p>Cover your distance with Meetify</p>
 <div role="button">
-<Link to={`/auth`}>Get started</Link>
+<Link to={"/auth"}>Get started</Link>
 </div>
 </div>
 <div>
