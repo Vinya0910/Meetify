@@ -32,29 +32,7 @@ A full-stack real-time video conferencing application built using WebRTC, Socket
 
 ---
 
-⚙️ Setup
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-# frontend
-cd frontend
-npm install
-
-# backend
-cd backend
-npm install
-
-Create ".env" in backend:
-
-MONGO_URI=your_mongodb_url
-PORT=8000
-
-Run:
-
-npm run dev
-
----
 
 🚀 Future Improvements
 
