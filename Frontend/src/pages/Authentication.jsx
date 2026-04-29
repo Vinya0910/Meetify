@@ -14,8 +14,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { AuthContext } from '../contexts/AuthContext';
 import { Snackbar } from '@mui/material';
-
-
+ //import { useNavigate } from 'react-router-dom';
 
 
 
@@ -38,12 +37,15 @@ export default function Authentication() {
 
 
     const { handleRegister, handleLogin } = React.useContext(AuthContext);
-
+     //const router = useNavigate();
     let handleAuth = async () => {
         try {
             if (formState === 0) {
 
                 let result = await handleLogin(username, password)
+//if(result){
+//console.log("sucess");
+//router("/");
 
 
             }

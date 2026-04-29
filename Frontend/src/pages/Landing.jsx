@@ -25,7 +25,7 @@ export default function Landing() {
 <h1><span style={{color:"#FF9839"}}>Connect</span> with your loved once</h1>
 <p>Cover your distance with Meetify</p>
 <div role="button">
-<Link to={"/auth"}>Get started</Link>
+<Link to={"/test"}>Get started</Link>
 </div>
 </div>
 <div>

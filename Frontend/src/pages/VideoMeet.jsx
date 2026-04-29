@@ -447,21 +447,40 @@ export default function VideoMeetComponent() {
     return (
         <div>
 
-            {askForUsername === true ?
+            {askForUsername === true ?(
+<div className={styles.lobbyContainer}>
 
-                <div>
+    <div className={styles.lobbyCard}>
 
+        <h2>Join Meeting</h2>
 
-                    <h2>Enter into Lobby </h2>
-                    <TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
-                    <Button variant="contained" onClick={connect}>Connect</Button>
+        <video
+            ref={localVideoref}
+            autoPlay
+            muted
+            className={styles.lobbyVideo}
+        />
 
+        <TextField
+            label="Enter your name"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            variant="outlined"
+            fullWidth
+        />
 
-                    <div>
-                        <video ref={localVideoref} autoPlay muted></video>
-                    </div>
+        <Button
+            variant="contained"
+            onClick={connect}
+            className={styles.joinBtn}
+        >
+            Join Now
+        </Button>
 
-                </div> :
+    </div>
+
+</div>
+             ) :
 
 
                 <div className={styles.meetVideoContainer}>

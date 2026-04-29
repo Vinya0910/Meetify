@@ -4,10 +4,7 @@ import httpStatus from "http-status";
 import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 export const AuthContext = createContext({});
-
-const client = axios.create({
-    baseURL: `$ {import.meta.env.VITE_API_URL}/users`
-});
+import client from "../client";
 
 
 export const AuthProvider = ({ children }) => {
@@ -22,7 +19,7 @@ export const AuthProvider = ({ children }) => {
 
     const handleRegister = async (name, username, password) => {
         try {
-            let request = await client.post("/register", {
+            let request = await client.post("/api/v1/users/register", {
                 name: name,
                 username: username,
                 password: password
@@ -39,7 +36,7 @@ export const AuthProvider = ({ children }) => {
 
     const handleLogin = async (username, password) => {
         try {
-            let request = await client.post("/login", {
+            let request = await client.post("/api/v1/users/login", {
                 username: username,
                 password: password
             });
